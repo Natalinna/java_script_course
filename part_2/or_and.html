@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <h1>Логические операторы</h1>
+    </head>
+    <body>
+        <script>
+          'use strict';
+          let userName = prompt("Кто там?", '');
+
+            if (userName == 'Админ') {
+
+              let pass = prompt('Пароль?', '');
+
+              if (pass == '123456') {
+                alert( 'Здравствуйте!' );
+              } else if (pass == '' || pass == null) {
+                alert( 'Отменено' );
+              } else {
+                alert( 'Неверный пароль' );
+              }
+
+            } else if (userName == '' || userName == null) {
+              alert( 'Отменено' );
+            } else {
+              alert( "Я вас не знаю" );
+            }
+
+        </script>
+    </body>
+</html>
