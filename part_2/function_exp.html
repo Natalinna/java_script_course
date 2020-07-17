@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <h1>Switch</h1>
+    </head>
+    <body>
+        <script>
+            'use strict';
+
+            let age = prompt("Сколько Вам лет?", 18);
+
+            let welcome;
+
+            if (age < 18) {
+
+            welcome = function() {
+                alert("Привет!");
+            };
+
+            } else {
+
+            welcome = function() {
+                alert("Здравствуйте!");
+            };
+
+            }
+
+            welcome();
+        </script>
+    </body>
+</html>
