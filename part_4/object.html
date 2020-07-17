@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <h1>Объекты</h1>
+    </head>
+    <body>
+        <script>
+            'use strict';
+
+            let user = {
+             name: "John",
+             age: 30
+            };
+
+            let clone = {}; // новый пустой объект
+
+            // скопируем все свойства user в него
+            for (let key in user) {
+                clone[key] = user[key];
+            }
+           
+            clone.name = "Pete"; // изменим в нём данные
+
+            alert( user.name );
+
+            let clone_2 = Object.assign({}, user);
+        </script>
+    </body>
+</html>
